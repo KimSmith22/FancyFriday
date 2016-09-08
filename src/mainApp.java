@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
 /**
-this is a demo app to decide what to wear
- * 
+* this is a demo app to decide what to wear
+* this demo uses boolean statements
+ * and if/else statements to output attire 
  */
 
 /**
@@ -46,10 +47,21 @@ public class mainApp {
 				raining = true;
 			}
 			//test if the variables are working properly
-			System.out.println(fancyFriday + " " + sunny + " " + raining);
+			//System.out.println(fancyFriday + " " + sunny + " " + raining);
 			
 			
 		// use if statement to decide what to wear
+			if(fancyFriday){
+				if(sunny){
+					System.out.println("tea gown");
+				}else if(raining){
+					System.out.println("power suit");
+				}else {
+					System.out.println("long gown");
+				}
+			}else {
+				System.out.println("tshirt and jeans");
+			}
 	}
 
 }
