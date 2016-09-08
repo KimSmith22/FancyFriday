@@ -21,8 +21,13 @@ public class mainApp {
 		boolean	sunny = false; 
 		boolean raining = false; 
 		
+		String inputContinue;
+		boolean userContinue = true;
+		
 		// get input from user
 			Scanner k = new Scanner(System.in);
+			
+		while(userContinue){
 			System.out.println("Is it fancy friday?");
 			inputFancyFriday = k.nextLine();
 			
@@ -62,6 +67,15 @@ public class mainApp {
 			}else {
 				System.out.println("tshirt and jeans");
 			}
+		//ask if user wants to continue
+		System.out.println("Continue?");
+		inputContinue = k.nextLine();
+		if(inputContinue.equals("yes")){
+			userContinue = true;
+			}else {
+				userContinue = false;
+			}
+		}//closes while loop
 	}
 
 }
